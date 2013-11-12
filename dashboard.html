@@ -42,25 +42,31 @@
 </head>
 <body>
 	<div id="leftcolumn" class="scroll-container">
-		<div id="div_home">
-            <input type="button" value="Home" id="but_home" onclick="location.href='index.html'"/>
-        </div>
-		<div class="scroll-scrollbar"><div class="scroll-track"><div class="scroll-thumb"><div class="scroll-end"></div></div></div></div>
-		<div class="scroll-viewport">
-			<div class="scroll-overview">
-				<div id="refresh" class="button">Refresh</div>
-				<div id="sensors_table"></div>
+		
+		<div class="scroll-scrollbar">
+			<div class="scroll-track">
+				<div class="scroll-thumb">
+					<div class="scroll-end">
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="scroll-viewport">
+			<div id="sensors_table" class="scroll-overview"></div>
 		</div>
 	</div>
 
 	<div id="content-container">
 		<div id="header">
-			<div id="buttons_content">
-                <input type='button' value='Clear Charts' id='clearCharts' />
-                <input type='button' value='Save Charts' id='saveCharts' />
-                <input type='button' value='Load Charts' id='loadCharts' />
-            </div>
+			<span>
+				<span class="back_span"><input type="button" value="Home" id="but_home" onclick="location.href='index.html'"/></span>
+				<span class="explorer_span"><input type="button" value="Add from Explorer" id="refresh" /></span>
+				<span class="operations_span">
+					<input type='button' value='Clear Charts' id='clearCharts' />
+	            	<input type='button' value='Save Charts' id='saveCharts' />
+	            	<input type='button' value='Load Charts' id='loadCharts' />
+	            </span>
+	        </span>
 		</div>
 
         <div id="content" class="scroll-container">
@@ -71,9 +77,9 @@
 			</div>
         </div>
 
-		<div id="footer">
+		<!-- <div id="footer">
 			<p>This is the Footer</p>
-		</div>
+		</div> -->
 	</div>
 
 	<div id="rightcolumn" class="scroll-container">

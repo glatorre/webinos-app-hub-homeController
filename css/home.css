@@ -8,15 +8,27 @@ html, body, #content-container {
 }
 
 #content-container {
-    margin-top: 40px;
+    /*margin-top: 100px;*/
 }
+
+.back_span{
+}
+.explorer_span{
+    margin-left: 2%;
+}
+.operations_span{
+    margin-left: 2%;
+}
+
 
 body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 13px;
     color:#333;
-    background-image: radial-gradient(#444,#000);
-    padding: 0 170px;
+    /*background-image: radial-gradient(#444,#000);*/
+    background-image: url('../assets/pattern.png');
+    background-repeat: repeat-x;
+    /*padding: 0 170px;*/
 }
 
 
@@ -57,7 +69,7 @@ hr {
 	height: 45px;
 	line-height: 27px;
 	padding-left: 1em;
-	color: #fff;
+	/*color: #fff;*/
 }
 
 #header {
@@ -138,24 +150,33 @@ hr {
 }
 
 #leftcolumn, #rightcolumn {
+    
+    margin-top : 50px;
 	box-sizing: border-box;
-	background: #000;
+    border-color:gray;
+    border-width:5px;
     position: absolute;
     top: 0;
     height: 100%;
     overflow: hidden;
-    width: 170px;
+    
     text-align: center;
     color: #fff;
+    z-index:10;
 }
 #rightcolumn img {
+    
 	background: #fff;
 	border-radius: 10px;
 }
 #leftcolumn {
+    width: 160px;
+    border-right-style:solid;
     left: 0;
 }
 #rightcolumn {
+    width: 170px;
+    border-left-style:solid;
     right: 0;
     margin-top: 45px;
 }
@@ -182,7 +203,7 @@ hr {
 .sensor {
 	margin-bottom: 15px;
 	margin-top: 15px;
-	border:2px solid gray;
+	/*border:2px solid gray;*/
 }
 
 #target {
@@ -422,6 +443,7 @@ hr {
 .scroll-thumb:after { content: '\0022EE'; position: absolute; height: 1.4em; margin-top: -1em; top: 50%; color: #688A19; width: 2em; left: 50%; margin-left: -1em; font-size: 200%; }
 .scroll-scrollbar { position: relative; float: right; width: 15px; z-index: 10; margin-right: 2px; }
 .scroll-track { background-color: #444; height: 100%; width:13px; position: relative; padding: 0 1px; }
+
 .scroll-thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; border-radius: 10px; }
 .scroll-end { overflow: hidden; height: 0; width: 13px; }
 .scroll-disable { display: none; }
